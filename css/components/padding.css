@@ -1,0 +1,19 @@
+.mPadding{
+    padding: 20px;
+}
+
+.lPadding{
+    padding: 50px;
+}
+
+.mMarginLeft{
+    margin-left: 20px;
+}
+
+.lMarginLeft{
+    margin-left: 50px;
+}
+
+.xlMarginLeft{
+    /* margin-left: -200px; */
+}
