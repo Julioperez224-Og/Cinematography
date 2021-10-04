@@ -1,0 +1,136 @@
+@import url("animations.css");
+
+.title-bar, .trailer-bar{
+    height: 75px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+
+.title-bar-title,.trailer{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.metadata-container{
+    height: max-content;
+    width: 100vw;
+    max-height: none;
+
+}
+
+.metadata-container div{
+    width: 50vw;
+    text-align: left;
+    border-right: 1px solid black;
+}
+
+.synopsis p{
+    width: 70%;
+}
+
+.releaseDate h3, .releaseDate h4{
+    text-align: center;
+}
+
+div h4{
+    padding-top: 1rem;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+div h3{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+div p{
+    padding-top: 2rem;
+    font-size: 1.9rem;
+    line-height: 240%;
+    text-transform: uppercase;
+}
+
+.gallery{
+    overflow: hidden;
+    width:  100vw;
+    height: max-content;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.gallery-slider{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.gallery-slider img{
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    max-width: 100vw;
+    height: auto;
+    margin-right: 20px;
+    
+    animation: imgSlide 15s infinite linear;
+}
+
+.gallery-slider:hover img{
+    animation-play-state: paused;
+}
+
+.gallery-slider img:hover{
+    transform: scale(1.03);
+    
+}
+
+.images-text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.reviews{
+    height: max-content;
+    max-height: max-content;
+}
+
+@media(max-width: 1100px){
+    .synopsis p{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 700px){
+    .gallery-slider img:hover{
+        transform: none;
+    }
+
+    .container-half{
+        flex-direction: column;
+    }
+
+    .container-half div{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .synopsis p{
+        width: 100%;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .review{
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .reviews{
+        padding: 0;
+    }
+}

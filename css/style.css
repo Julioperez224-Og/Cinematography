@@ -1,3 +1,5 @@
+@import url("animations.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -75,7 +77,7 @@ nav a:hover{
 }
 
 .container-slideshow{
-    width: 200vw;
+    width: max-content;
     height: max-content;
     display: flex;
     overflow-x: hidden;
@@ -92,12 +94,12 @@ nav a:hover{
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    animation: slideLeft 20s infinite;
+    animation: slideLeft 15s infinite linear;
     position: relative;
 }
 
 .container-slider-2{
-    animation: slideRight 20s infinite;
+    animation: slideRight 15s infinite linear;
 }
 
 .container-slider div{
@@ -211,44 +213,7 @@ nav a:hover{
     margin-top: 1rem;
 }
 
-@keyframes slide {
-    0%{
-        top: -50rem;
-    }
-    
-    100%{
-        top: 150%;
-    }
-}
 
-@keyframes slideLeft{
-    0%{
-        left:0;
-    }
-    100%{
-        left: -100vw;
-    }
-}
-
-@keyframes slideRight{
-    0%{
-        right:100vw;
-    }
-
-    100%{
-        right: 0vw;
-    }
-}
-
-@keyframes pSlideRight{
-    0%{
-        left: -100%;
-    }
-
-    100%{
-        left: 100%;
-    }
-}
 
 @media (max-width: 950px) {
     .container-slider{
@@ -276,28 +241,29 @@ nav a:hover{
         height: 400px;
         flex-direction: column;
     }
-    .side-title{
-        width: 100vw;
-        height: 100px;
-        height: max-content;
-    }
 
     .side-title{
         writing-mode: horizontal-tb;
         position: relative;
-        width: 150vw;
+        width: 100vw;
         height: 50px;
         overflow: hidden;
         display: flex;
         justify-content: start;
         align-items: center;
+        flex-wrap: nowrap;
         border-bottom: 1px solid black;
+    }
+
+    .side-title{
+        height: 100px;
+        /* height: max-content; */
     }
     
     .side-title p{
-        position: inherit;
         font-size: 2rem;
         animation: pSlideRight 8s ease infinite;
+        overflow: hidden;
     }
 
     .pDisapear{
