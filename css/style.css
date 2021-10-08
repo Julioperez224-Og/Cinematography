@@ -260,7 +260,7 @@ a h2 {
 
   .side-title p {
     font-size: 2rem;
-    animation: pSlideRight 10s ease infinite;
+    animation: pSlideRight 12s ease infinite;
     overflow: hidden;
   }
 
@@ -309,5 +309,11 @@ a h2 {
   }
   .video-frame {
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal h4 {
+    font-size: 4rem;
   }
 }
