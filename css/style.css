@@ -245,9 +245,10 @@ a h2 {
   }
 
   .side-title {
+    height: 100px;
     writing-mode: horizontal-tb;
     position: relative;
-    width: 100vw;
+    width: 250vw;
     height: 50px;
     overflow: hidden;
     display: flex;
@@ -257,14 +258,9 @@ a h2 {
     border-bottom: 1px solid black;
   }
 
-  .side-title {
-    height: 100px;
-    /* height: max-content; */
-  }
-
   .side-title p {
     font-size: 2rem;
-    animation: pSlideRight 8s ease infinite;
+    animation: pSlideRight 10s ease infinite;
     overflow: hidden;
   }
 
